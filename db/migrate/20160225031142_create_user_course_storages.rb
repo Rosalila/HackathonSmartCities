@@ -1,6 +1,6 @@
-class CreateUserCourseData < ActiveRecord::Migration
+class CreateUserCourseStorages < ActiveRecord::Migration
   def change
-    create_table :user_course_data do |t|
+    create_table :user_course_storages do |t|
       t.integer :course_id
       t.integer :user_id
       t.text :json_data
