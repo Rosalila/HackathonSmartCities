@@ -8,7 +8,7 @@ class Api::V1::ProgressesController < Api::V1::ApplicationController
       ucd.json_data=params[:progress].to_json
       ucd.save
 
-      render json: {"errors":[]}
+      render json: {"errors":[]}, handlers: [:jbuilder]
     else
       ucd = UserCourseStorage.new
       ucd.user_id = params[:user_id]
