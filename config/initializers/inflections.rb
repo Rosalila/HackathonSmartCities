@@ -15,6 +15,6 @@
 #   inflect.acronym 'RESTful'
 # end
 ActiveSupport::Inflector.inflections do |inflect|
-  inflect.irregular 'user_course_data', 'user_course_datas'
+  inflect.irregular 'user_course_storages', 'user_course_storages'
   inflect.irregular 'UserCourseData', 'UserCourseData'
 end
